@@ -71,7 +71,22 @@
   },
   {
     "path": "downloads/yingde-complete.zip",
-    "bytes": 46742268,
-    "sha256": "cea40e665d5b3e89b0b356a95ff8eadd5788a979a832efb9dd1052cc6acf9540"
+    "bytes": 46744360,
+    "sha256": "1bd7a74635e217b4e0b8e7e53266365efd8dec3f3bffd92a7142cd351a4359d0"
+  },
+  {
+    "path": "downloads/yingde-premiere.zip",
+    "bytes": 71144,
+    "sha256": "db0aba9ed90a5dc559c0d82b9d415919ba01224c115a8983a61c7a296adc9845"
+  },
+  {
+    "path": "files/字幕.srt",
+    "bytes": 584,
+    "sha256": "292d1c9bebf1f0a987b373813d8ea9a3edd69900c0670232dbd4fd1aa8c78f32"
+  },
+  {
+    "path": "files/英德红茶_多轨字幕.srt",
+    "bytes": 1146,
+    "sha256": "b0d03d873a2907aced4b69876516166eae37b9424f86fc1a5cb20711e8ce81f9"
   }
 ]

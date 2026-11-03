@@ -7,3 +7,4 @@
 *.png binary
 *.mp3 binary
 public/h5/** -text
+public/files/*.srt -text

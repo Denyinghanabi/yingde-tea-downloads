@@ -7,7 +7,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = 'Denyinghanabi/yingde-tea-downloads'
-TAG = 'v1.0.0'
+TAG = 'v1.0.1'
 
 
 def credential_config():
@@ -60,7 +60,7 @@ def main():
         releases = api(config, 'GET', '/repos/' + REPO + '/releases')
         release = next((r for r in releases if r['tag_name'] == TAG), None)
     if release is None:
-        release = api(config, 'POST', '/repos/' + REPO + '/releases', {'tag_name': TAG, 'target_commitish': 'main', 'name': '英德红茶作品下载 v1.0.0', 'body': '包含 H5、PR 源文件、MP4 成片和新闻稿 Word。原始素材库不包含在内；H5 仅保留运行所需资源，PR 工程需要自行重新链接原始素材。\n\n网站：https://ydhc.denyinghanabi.cc.cd/', 'draft': True})
+        release = api(config, 'POST', '/repos/' + REPO + '/releases', {'tag_name': TAG, 'target_commitish': 'main', 'name': '英德红茶作品下载 ' + TAG, 'body': '包含 H5、PR 工程包、MP4 成片和新闻稿 Word。PR 目录包含原始工程、空素材文件夹、两个字幕文件及使用说明，不附原始视频、音乐和音效。拷入素材后需在 Premiere 中重新链接媒体。\n\n网站：https://ydhc.denyinghanabi.cc.cd/', 'draft': True})
     existing = {a['name']: a for a in release['assets']}
     for name in ['yingde-video.mp4', 'yingde-complete.zip']:
         file = ROOT / 'output/release' / name
