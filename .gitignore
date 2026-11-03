@@ -3,5 +3,6 @@ __pycache__/
 .wrangler/
 .playwright-cli/
 node_modules/
+.qrgen/
 *.log
 .env*
