@@ -1,0 +1,77 @@
+[
+  {
+    "path": "h5/index.html",
+    "bytes": 7384,
+    "sha256": "c5a996868045731c0eb25f5e2f9203b40b4baf5039f56ea55a17ef67d5f18e2b"
+  },
+  {
+    "path": "h5/style.css",
+    "bytes": 11330,
+    "sha256": "6091d178d650b8dc668b29086e2ac64772978fd373deef1af92160a94bb6333b"
+  },
+  {
+    "path": "h5/script.js",
+    "bytes": 6251,
+    "sha256": "d1559bc8324dc3d985074d0006f761372f6727831408a3a1e38aa6712c79ef36"
+  },
+  {
+    "path": "h5/Logo源文件/tea-logo.svg",
+    "bytes": 441,
+    "sha256": "9d5fe5b98263faf58a086a01b8654d05504c45fae5c9977f9ebdaceb7354a3ff"
+  },
+  {
+    "path": "h5/素材精选/tea_garden_main.jpg",
+    "bytes": 3546743,
+    "sha256": "82529e8f85fa7940ae9f9a7ee6ab395d748069908ec90ee1d64222b94580d81c"
+  },
+  {
+    "path": "h5/素材精选/mountain_garden.jpg",
+    "bytes": 2844896,
+    "sha256": "d2c34d521ef25f430eba83ae98a998697f6f69ed29dec2a3a246d688f7c95ee0"
+  },
+  {
+    "path": "h5/素材精选/tea_picker.jpg",
+    "bytes": 3693761,
+    "sha256": "aa0c4fa008c4fd0d0df2908a0550956773614317af0e61b5fd9f55cf3d7fa2d1"
+  },
+  {
+    "path": "h5/素材精选/tea_pour.jpg",
+    "bytes": 3625355,
+    "sha256": "3e2c304b96face200bb4d8df027776ee04d8326c842961c766a70319fa33eeb3"
+  },
+  {
+    "path": "h5/素材精选/tea_set.jpg",
+    "bytes": 973579,
+    "sha256": "9887501fbaa6edf16efe16727e208a9d9ec4430fcc2433d2515d3e2363d797e9"
+  },
+  {
+    "path": "h5/素材精选/鸟声.mp3",
+    "bytes": 105318,
+    "sha256": "4dc4e74955df132ed086e175195c8b83f7fff9b3ee2679f4ae0c1c7c8f7494e7"
+  },
+  {
+    "path": "files/yingde-premiere.prproj",
+    "bytes": 76093,
+    "sha256": "29bc5e5a8d5df5647b4282e6081c97d3362c852385b8d9123f34dff4a922faa8"
+  },
+  {
+    "path": "files/yingde-news.docx",
+    "bytes": 488968,
+    "sha256": "75ebb56353ceda1586747749c3bb99983e4d1a07213bc03f66b4f12efcf5fc63"
+  },
+  {
+    "path": "downloads/yingde-h5.zip",
+    "bytes": 14784170,
+    "sha256": "a79b4162eec698f45d4c3f3aa2381baabfb58fdeefea7531caa857a268de4c8b"
+  },
+  {
+    "path": "downloads/yingde-video.mp4",
+    "bytes": 31417541,
+    "sha256": "3a2b95a6cff495d3f87a60076d2974ea6d4a1bffa9b21f0f22ad7efa23040c68"
+  },
+  {
+    "path": "downloads/yingde-complete.zip",
+    "bytes": 46742268,
+    "sha256": "cea40e665d5b3e89b0b356a95ff8eadd5788a979a832efb9dd1052cc6acf9540"
+  }
+]
