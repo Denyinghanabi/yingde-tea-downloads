@@ -2,7 +2,7 @@
   "name": "yingde-tea-downloads",
   "main": "worker.js",
   "account_id": "43fa07f50ef8998a740eb676e9c75bc4",
-  "compatibility_date": "2026-11-04",
+  "compatibility_date": "2026-11-03",
   "assets": {
     "directory": "./public",
     "binding": "ASSETS",
