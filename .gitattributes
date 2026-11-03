@@ -6,3 +6,4 @@
 *.jpg binary
 *.png binary
 *.mp3 binary
+public/h5/** -text
