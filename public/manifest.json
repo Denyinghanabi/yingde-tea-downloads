@@ -1,18 +1,18 @@
 [
   {
     "path": "h5/index.html",
-    "bytes": 7384,
-    "sha256": "c5a996868045731c0eb25f5e2f9203b40b4baf5039f56ea55a17ef67d5f18e2b"
-  },
-  {
-    "path": "h5/style.css",
-    "bytes": 11330,
-    "sha256": "6091d178d650b8dc668b29086e2ac64772978fd373deef1af92160a94bb6333b"
+    "bytes": 9358,
+    "sha256": "b58aeccd8c10e30a3547874a961e2c3ca6c730dffd854db6e6df972052c62d10"
   },
   {
     "path": "h5/script.js",
-    "bytes": 6251,
-    "sha256": "d1559bc8324dc3d985074d0006f761372f6727831408a3a1e38aa6712c79ef36"
+    "bytes": 8873,
+    "sha256": "354bd9a537d420dd8528ec761898908072f0fc9179430e53565a54261f8a56cc"
+  },
+  {
+    "path": "h5/style.css",
+    "bytes": 17505,
+    "sha256": "304feb269e1a1e044cd8125dd4e8bbd5e86ec746de98985a290d70367a783eb4"
   },
   {
     "path": "h5/Logo源文件/tea-logo.svg",
@@ -20,29 +20,24 @@
     "sha256": "9d5fe5b98263faf58a086a01b8654d05504c45fae5c9977f9ebdaceb7354a3ff"
   },
   {
-    "path": "h5/素材精选/tea_garden_main.jpg",
-    "bytes": 3546743,
-    "sha256": "82529e8f85fa7940ae9f9a7ee6ab395d748069908ec90ee1d64222b94580d81c"
+    "path": "h5/Logo源文件/yingde-logo-green.svg",
+    "bytes": 59072,
+    "sha256": "b585ceb42f45b5e1896afd13a67a19b88e558911a00670eca1dfaf44828678a5"
   },
   {
-    "path": "h5/素材精选/mountain_garden.jpg",
-    "bytes": 2844896,
-    "sha256": "d2c34d521ef25f430eba83ae98a998697f6f69ed29dec2a3a246d688f7c95ee0"
+    "path": "h5/Logo源文件/yingde-logo-user.png",
+    "bytes": 168115,
+    "sha256": "5172b6e8603eb095bcb1fc1967bd81f6ea1036cf1f1bd0b90db1c926c7d5f2c8"
   },
   {
-    "path": "h5/素材精选/tea_picker.jpg",
-    "bytes": 3693761,
-    "sha256": "aa0c4fa008c4fd0d0df2908a0550956773614317af0e61b5fd9f55cf3d7fa2d1"
+    "path": "h5/字体/NotoSans-LICENSE.txt",
+    "bytes": 4301,
+    "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
   },
   {
-    "path": "h5/素材精选/tea_pour.jpg",
-    "bytes": 3625355,
-    "sha256": "3e2c304b96face200bb4d8df027776ee04d8326c842961c766a70319fa33eeb3"
-  },
-  {
-    "path": "h5/素材精选/tea_set.jpg",
-    "bytes": 973579,
-    "sha256": "9887501fbaa6edf16efe16727e208a9d9ec4430fcc2433d2515d3e2363d797e9"
+    "path": "h5/字体/yingde-font.css",
+    "bytes": 177422,
+    "sha256": "a7bf534c2326809fcba4276106e67ef7c6e9bfe7b49e7b77c0570f9f2b897213"
   },
   {
     "path": "h5/素材精选/鸟声.mp3",
@@ -50,9 +45,94 @@
     "sha256": "4dc4e74955df132ed086e175195c8b83f7fff9b3ee2679f4ae0c1c7c8f7494e7"
   },
   {
-    "path": "files/yingde-premiere.prproj",
-    "bytes": 76093,
-    "sha256": "29bc5e5a8d5df5647b4282e6081c97d3362c852385b8d9123f34dff4a922faa8"
+    "path": "h5/素材精选/品质切换/garden_end.jpg",
+    "bytes": 212478,
+    "sha256": "ca70168718d9cc1910fba5cb37ee4e4af2e3a6ddab74193192f3bbd09fe92b21"
+  },
+  {
+    "path": "h5/素材精选/品质切换/garden_history.jpg",
+    "bytes": 362519,
+    "sha256": "1965cd5aa00efa9aa73fd7726046bfa4d78e1e4555dc1b64d84e6d97ad23bef4"
+  },
+  {
+    "path": "h5/素材精选/品质切换/garden_home.jpg",
+    "bytes": 653135,
+    "sha256": "123bd94b009e53af9933fec27fbe04d5e596dd2c11bc3c2e9c99cfd587f9e58e"
+  },
+  {
+    "path": "h5/素材精选/品质切换/garden_land.jpg",
+    "bytes": 302632,
+    "sha256": "0cd3dd72fbc4dc95a93f0e057586d781145fc804f3aec3d298a0636cb47ab975"
+  },
+  {
+    "path": "h5/素材精选/品质切换/journey_brewing_v3.jpg",
+    "bytes": 171727,
+    "sha256": "54736a2c9413f9f8ad2712016e99585e5b0a2143159eab064f6113556d73b63c"
+  },
+  {
+    "path": "h5/素材精选/品质切换/journey_garden.jpg",
+    "bytes": 337493,
+    "sha256": "7d169033c2a00d3b6465c72a04b6a329e620b0cad7cdd9f9ca00e6283a92f576"
+  },
+  {
+    "path": "h5/素材精选/品质切换/journey_leaves_v2.jpg",
+    "bytes": 758226,
+    "sha256": "0838ff8310605f75a40007d6fece9a5cc331af282ac32288dab710bb3ac3684a"
+  },
+  {
+    "path": "h5/素材精选/品质切换/milestone_garden.jpg",
+    "bytes": 470881,
+    "sha256": "a582ae53ea6e86144905abbe2e38edfe75330c55f0b285689d433feb87efb728"
+  },
+  {
+    "path": "h5/素材精选/品质切换/process_craft.jpg",
+    "bytes": 240639,
+    "sha256": "b2adf6eadba4ecf9c32f899d3e1e51c376e4d27081900586eb281e2dc6c139d7"
+  },
+  {
+    "path": "h5/素材精选/品质切换/process_cup.jpg",
+    "bytes": 93797,
+    "sha256": "4e56db4c348dff66d1c7b73bf77f1161f189f724153b7e804de6098a7d58057c"
+  },
+  {
+    "path": "h5/素材精选/品质切换/process_dry.jpg",
+    "bytes": 339201,
+    "sha256": "f78973722c82faed66e3bbf343495bf6766fce21034455b414814701ab86346a"
+  },
+  {
+    "path": "h5/素材精选/品质切换/process_leaf.jpg",
+    "bytes": 278979,
+    "sha256": "d67d7d200bab9facfe4d973b97e563185cacb08b3bff0202d5db85fcd8a5f55b"
+  },
+  {
+    "path": "h5/素材精选/品质切换/quality_aroma_v3.jpg",
+    "bytes": 226676,
+    "sha256": "1aa944c259a771879bf2e78f502f5362c7b584f4259f1ade7d7e0ed201acc411"
+  },
+  {
+    "path": "h5/素材精选/品质切换/quality_mellow.jpg",
+    "bytes": 171959,
+    "sha256": "2dfae9021f7a4c0ee46f73491da36f941ec30f7224ea8d63d930772eacadefb0"
+  },
+  {
+    "path": "h5/素材精选/品质切换/quality_sweet.jpg",
+    "bytes": 356910,
+    "sha256": "7c03caf2927a56eba58f4b520adc57d9308ff0224a62a0215bd3312ec9a4c1f5"
+  },
+  {
+    "path": "h5/素材精选/品质切换/taste_colour.jpg",
+    "bytes": 258890,
+    "sha256": "5a1087abe3500e6481c7f6506b75371318f102aca30d94ab60c363283d884961"
+  },
+  {
+    "path": "h5/素材精选/品质切换/taste_flavour_v3.jpg",
+    "bytes": 116984,
+    "sha256": "da60fe86923e3769d779bb6c15c0aea11e36a141f4535a844c18c8c4604a7168"
+  },
+  {
+    "path": "h5/素材精选/品质切换/taste_tea.jpg",
+    "bytes": 87209,
+    "sha256": "d3bdc3bae6173caadcf4196f71f24b609fa8d7b5029c64e202ef119827f93e63"
   },
   {
     "path": "files/yingde-news.docx",
@@ -60,33 +140,63 @@
     "sha256": "75ebb56353ceda1586747749c3bb99983e4d1a07213bc03f66b4f12efcf5fc63"
   },
   {
-    "path": "downloads/yingde-h5.zip",
-    "bytes": 14784170,
-    "sha256": "a79b4162eec698f45d4c3f3aa2381baabfb58fdeefea7531caa857a268de4c8b"
-  },
-  {
-    "path": "downloads/yingde-video.mp4",
-    "bytes": 31417541,
-    "sha256": "3a2b95a6cff495d3f87a60076d2974ea6d4a1bffa9b21f0f22ad7efa23040c68"
-  },
-  {
-    "path": "downloads/yingde-complete.zip",
-    "bytes": 46744360,
-    "sha256": "1bd7a74635e217b4e0b8e7e53266365efd8dec3f3bffd92a7142cd351a4359d0"
-  },
-  {
-    "path": "downloads/yingde-premiere.zip",
-    "bytes": 71144,
-    "sha256": "db0aba9ed90a5dc559c0d82b9d415919ba01224c115a8983a61c7a296adc9845"
+    "path": "files/yingde-premiere.prproj",
+    "bytes": 114706,
+    "sha256": "b7694370d005a34fe8fbfae2396bc15bb942350599648359209df1a308b13cc2"
   },
   {
     "path": "files/字幕.srt",
-    "bytes": 584,
-    "sha256": "292d1c9bebf1f0a987b373813d8ea9a3edd69900c0670232dbd4fd1aa8c78f32"
+    "bytes": 1059,
+    "sha256": "ba9be27df3bc01a41de07100b062d405f40c583737fc860f610e40a68d2fe7a0"
+  },
+  {
+    "path": "files/字幕_配音同步版.srt",
+    "bytes": 1059,
+    "sha256": "ba9be27df3bc01a41de07100b062d405f40c583737fc860f610e40a68d2fe7a0"
+  },
+  {
+    "path": "files/字幕配音逐句核对表.csv",
+    "bytes": 1382,
+    "sha256": "92784a3e238b9f02bc78e4f36a090203b7706940d4b457c42e7b6893b6d9b3fa"
+  },
+  {
+    "path": "files/实际使用素材清单.csv",
+    "bytes": 7800,
+    "sha256": "58a1fa43d1b26315079a6244bfe348015b3fd88a8c18d76b0caba6f11581096c"
+  },
+  {
+    "path": "files/旁白稿.txt",
+    "bytes": 945,
+    "sha256": "b914d0620fbfde72a44d796fb6b3da7f454b472f7ae3ccd825e525e83f87505b"
+  },
+  {
+    "path": "files/普通话年轻男声旁白_48kHz.wav",
+    "bytes": 7920044,
+    "sha256": "1532c9ce01047226c0aabc621964d7778473551248b10cae9f8dccc565e9d590"
   },
   {
     "path": "files/英德红茶_多轨字幕.srt",
-    "bytes": 1146,
-    "sha256": "b0d03d873a2907aced4b69876516166eae37b9424f86fc1a5cb20711e8ce81f9"
+    "bytes": 1059,
+    "sha256": "ba9be27df3bc01a41de07100b062d405f40c583737fc860f610e40a68d2fe7a0"
+  },
+  {
+    "path": "downloads/yingde-h5.zip",
+    "bytes": 5794283,
+    "sha256": "17786ff841ff527a43661d6b3f711a8343913f1efd663fb83e55c4e9ae4181aa"
+  },
+  {
+    "path": "downloads/yingde-premiere.zip",
+    "bytes": 4409111,
+    "sha256": "12003554870f545a780ba1cfc3706fff7ba2c3e881aba353a75b663db2854756"
+  },
+  {
+    "path": "downloads/yingde-video.mp4",
+    "bytes": 59826632,
+    "sha256": "e8bbac7768a64bdec5b27c2f0f2feaf852c319030db388700f88a89a4617f003"
+  },
+  {
+    "path": "downloads/yingde-complete.zip",
+    "bytes": 70499748,
+    "sha256": "f315b1517cb67d5e0f078ad000db43c8aabea639bfb20b38dc590010f9d8448a"
   }
 ]

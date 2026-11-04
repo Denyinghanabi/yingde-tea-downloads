@@ -6,3 +6,68 @@
 .page.active .history-list article,.page.active .milestones article{animation:chapterRow .65s cubic-bezier(.2,.7,.2,1) both}.page.active .history-list article:nth-child(1),.page.active .milestones article:nth-child(1){animation-delay:.26s}.page.active .history-list article:nth-child(2),.page.active .milestones article:nth-child(2){animation-delay:.38s}.page.active .milestones article:nth-child(3){animation-delay:.5s}.page.active .history-photo,.page.active .cultivar-image,.page.active .collage{animation:photoUnveil .85s .22s cubic-bezier(.2,.7,.2,1) both}.page.active .process-tabs button{animation:chapterRow .5s both}.page.active .process-tabs button:nth-child(1){animation-delay:.2s}.page.active .process-tabs button:nth-child(2){animation-delay:.28s}.page.active .process-tabs button:nth-child(3){animation-delay:.36s}.page.active .process-tabs button:nth-child(4){animation-delay:.44s}.page.active .process-card{animation:photoUnveil .7s .28s both}.page.active .hero-stamp{animation:stampIn .7s .5s both}.page.active .taste-tags span{animation:stampIn .6s both}.page.active .taste-tags span:nth-child(1){animation-delay:.35s}.page.active .taste-tags span:nth-child(2){animation-delay:.45s}.page.active .taste-tags span:nth-child(3){animation-delay:.55s}
 @keyframes chapterRow{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@keyframes photoUnveil{from{opacity:0;clip-path:inset(8% 0 8% 0);transform:scale(1.025)}to{opacity:1;clip-path:inset(0);transform:scale(1)}}@keyframes stampIn{from{opacity:0;transform:scale(.88)}to{opacity:1;transform:scale(1)}}
 @media(prefers-reduced-motion:reduce){.transition-wash{display:none}.page.active .history-list article,.page.active .milestones article,.page.active .history-photo,.page.active .cultivar-image,.page.active .collage,.page.active .process-tabs button,.page.active .process-card,.page.active .hero-stamp,.page.active .taste-tags span{animation:none}}
+
+/* Editable black-type quality tabs; preserve the original image frame and layout. */
+html,body,.page h2,.loading-copy h1,.wordmark i,.process-card h3,.history-list strong,.milestones strong,.page-indicator,.process-tabs button b,.process-card span,.taste-tags span,.hero-stamp{font-family:SimHei,"黑体",YingdeHei,"Noto Sans SC","PingFang SC",sans-serif}
+.cultivar-image .quality-photo{position:absolute;inset:0;opacity:0;transform:scale(1.025);transition:opacity 440ms ease,transform 440ms cubic-bezier(.2,.7,.2,1);pointer-events:none}
+.cultivar-image .quality-photo.is-selected{opacity:1;transform:scale(1)}
+.cultivar-image #qualityCaption{z-index:2;min-width:45%;max-width:100%}
+.quality button{border:1px solid #8c3e2d88;color:var(--red);background:transparent;padding:2cqw 4cqw;border-radius:30px;font-size:clamp(11px,2.4cqw,15px);min-height:44px;min-width:44px;cursor:pointer;touch-action:manipulation;transition:color .18s,background .18s}
+.quality button[aria-selected=true]{background:var(--red);border-color:var(--red);color:var(--white)}
+.quality button:active{transform:scale(.97)}
+@media(prefers-reduced-motion:reduce){.cultivar-image .quality-photo{transition:none;transform:none}}
+
+/* Supplied brand artwork: centered on opening/ending; upper left on chapters 2–9. */
+.topbar{top:0;height:22cqw;pointer-events:none}
+.topbar .brand-logo{position:absolute;left:-1.5cqw;top:0;width:22cqw;height:22cqw;object-fit:contain;pointer-events:none}
+.topbar .sound{position:absolute;right:0;top:6cqw;pointer-events:auto}
+.experience:not(.light-ui) .brand-logo{filter:none;background:#efe9d9f2;border-radius:6px;padding:.7cqw}
+.experience[data-current-page="1"] .brand-logo,.experience[data-current-page="10"] .brand-logo{visibility:hidden}
+.loading-art img{width:31.25cqw;max-width:200px}
+.end-content img{width:31.25cqw;max-width:200px;filter:none;opacity:1;background:#efe9d9ed;border-radius:10px;padding:1.5cqw}
+.sound{display:flex;align-items:center;gap:4px;white-space:nowrap;line-height:1}
+.sound-label{white-space:nowrap;margin-left:0}
+.chapter-top span,.location b,.location span,.eyebrow,.ready{white-space:nowrap}
+
+/* User requested the unframed transparent brand artwork on every page. */
+.topbar .brand-logo,.experience:not(.light-ui) .brand-logo,.end-content img{background:transparent;border-radius:0;padding:0;filter:none}
+
+.cultivar-name{position:relative;top:-3cqw}.cultivar-image{height:44%}.quality-hint{margin:3cqw 0 0;font-size:2.4cqw;color:var(--red);letter-spacing:.04em}.quality{margin-top:2cqw}.process-card p{white-space:pre-line;text-wrap:pretty}
+.taste-backgrounds{position:absolute;inset:0;z-index:-3;overflow:hidden}.taste-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 440ms ease}.taste-bg.is-selected{opacity:1}.taste-copy .taste-hint{font-size:2.4cqw;margin:4cqw 0 2cqw;line-height:1.4}.taste-tags{margin-top:0}.taste-tags button{display:grid;place-items:center;border:1px solid #fff9;border-radius:50%;width:10cqw;height:10cqw;min-height:44px;min-width:44px;background:transparent;color:#fff;cursor:pointer}.taste-tags button[aria-selected=true]{background:#efe9d9;color:var(--forest);border-color:#efe9d9}
+.milestone-photo{position:absolute;left:9%;right:9%;bottom:13%;width:82%;height:18%;object-fit:cover}.collage{height:auto;display:grid;grid-template-columns:150fr 360fr;grid-template-rows:auto auto;gap:2.2cqw;margin-top:5cqw}.collage img{height:auto;object-fit:contain;align-self:start}.collage img:first-child{grid-column:1 / -1;grid-row:auto}.journey-copy{font-size:2.8cqw;line-height:1.7;margin-top:3cqw}.page p{ text-wrap:pretty }.end-content>p:last-of-type{text-align:center}
+@media(prefers-reduced-motion:reduce){.taste-bg{transition:none}}
+
+.chapter-top:not(.light),.chapter-top:not(.light) span,.chapter-top:not(.light) span:last-child{color:var(--leaf)}
+
+.milestone-photo{top:66.66667%;height:19.84127%;bottom:auto}
+
+.experience:not(.light-ui) .brand-logo,.end-content img{filter:drop-shadow(0 0 1.4px rgba(255,253,246,.85))}
+
+/* Final optical alignment and separate reading / interaction groups. */
+.page-cultivar .cultivar-heading{position:relative;height:34.4cqw;align-items:flex-start;margin-top:6.7cqw}
+.page-cultivar .cultivar-heading .vertical{position:absolute;left:0;top:.8cqw}
+.page-cultivar .cultivar-heading h2{position:absolute;left:7.4cqw;top:0;margin:0;line-height:1.35;letter-spacing:.05em}
+.page-cultivar .cultivar-name{top:0}
+.page-cultivar .cultivar-image{position:absolute;left:9.0625%;top:31.26984%;width:81.875%;height:35.238095%}
+.page-cultivar .cultivar-copy{position:absolute;left:9.0625%;top:68.4127%;width:81.875%;margin:0;line-height:1.65}
+.page-cultivar .quality-hint{position:absolute;left:9.0625%;top:79.36508%;margin:0;font-size:2.2cqw;line-height:1.6}
+.page-cultivar .quality{position:absolute;left:9.0625%;top:82.53968%;margin:0;gap:3cqw}
+.milestone-photo-frame{position:absolute;left:9.0625%;top:66.66667%;width:81.875%;height:19.84127%;overflow:hidden}
+.milestone-photo-frame .milestone-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.page.active .milestone-photo-frame{animation:milestoneReveal .9s 1s cubic-bezier(.2,.7,.2,1) both}
+.page.active .milestone-photo-frame img{animation:milestonePush 12s 1s linear both}
+.page-journey .collage{grid-template-columns:1fr 1fr;gap:2.2cqw}
+.page-journey .journey-copy{margin-top:5.4cqw}
+@keyframes milestoneReveal{from{opacity:0;transform:translateY(14px);clip-path:inset(0 0 100% 0)}to{opacity:1;transform:none;clip-path:inset(0 0 0 0)}}
+@keyframes milestonePush{from{transform:scale(1)}to{transform:scale(1.06)}}
+@media(prefers-reduced-motion:reduce){.page.active .milestone-photo-frame,.page.active .milestone-photo-frame img{animation:none}}
+
+/* Keep the uncluttered image treatment saved in the editable project. */
+#qualityCaption{display:none}
+
+.page-cultivar .cultivar-heading h2{top:-1.8cqw}
+.page-cultivar .quality-hint{font-size:2.5cqw}
+
+.page-journey .collage{grid-template-columns:350fr 160fr}
+
+.page-journey .collage{grid-template-columns:371.06195906031047fr 138.93804093968953fr}

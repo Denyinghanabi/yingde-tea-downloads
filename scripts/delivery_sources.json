@@ -1,0 +1,16 @@
+{
+  "release_tag": "v1.0.2",
+  "h5": "../英德红茶_最终成品/01_H5/最终交付_20261104_排版修订版/H5作品",
+  "pr": "../英德红茶_60秒男声配音版/英德红茶_60秒_字幕配音同步版.prproj",
+  "video": "../英德红茶_60秒男声配音版/英德红茶_60秒_字幕配音同步版.mp4",
+  "voice": "../英德红茶_60秒男声配音版/普通话年轻男声旁白_48kHz.wav",
+  "subtitle": "../英德红茶_60秒男声配音版/字幕_配音同步版.srt",
+  "word": "public/files/yingde-news.docx",
+  "support": [
+    "../英德红茶_60秒男声配音版/旁白稿.txt",
+    "../英德红茶_60秒男声配音版/实际使用素材清单.csv",
+    "../英德红茶_60秒男声配音版/字幕配音逐句核对表.csv"
+  ],
+  "h5_platform_url": "https://5.u.h5mc.com/c/kewv/6mln/index.html",
+  "h5_editor_url": "https://www.mugeda.com/animation/edit/6aea2e3333e36f0d4107fb75?ui=pro"
+}

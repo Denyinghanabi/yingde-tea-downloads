@@ -6,5 +6,8 @@
 *.jpg binary
 *.png binary
 *.mp3 binary
-public/h5/** -text
-public/files/*.srt -text
+*.wav binary
+public/h5/** -text whitespace=-blank-at-eof,cr-at-eol
+public/files/*.srt -text whitespace=-blank-at-eof,cr-at-eol
+public/files/*.csv -text whitespace=-blank-at-eof,cr-at-eol
+public/files/*.txt -text whitespace=-blank-at-eof,cr-at-eol

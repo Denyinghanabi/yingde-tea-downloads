@@ -1,13 +1,14 @@
 """Publish public artifacts using Git Credential Manager, without persisting tokens."""
 from pathlib import Path
 import argparse
+import hashlib
 import json
 import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = 'Denyinghanabi/yingde-tea-downloads'
-TAG = 'v1.0.1'
+TAG = 'v1.0.2'
 
 
 def credential_config():
@@ -60,18 +61,18 @@ def main():
         releases = api(config, 'GET', '/repos/' + REPO + '/releases')
         release = next((r for r in releases if r['tag_name'] == TAG), None)
     if release is None:
-        release = api(config, 'POST', '/repos/' + REPO + '/releases', {'tag_name': TAG, 'target_commitish': 'main', 'name': '英德红茶作品下载 ' + TAG, 'body': '包含 H5、PR 工程包、MP4 成片和新闻稿 Word。PR 目录包含原始工程、空素材文件夹、两个字幕文件及使用说明，不附原始视频、音乐和音效。拷入素材后需在 Premiere 中重新链接媒体。\n\n网站：https://ydhc.denyinghanabi.cc.cd/', 'draft': True})
+        release = api(config, 'POST', '/repos/' + REPO + '/releases', {'tag_name': TAG, 'target_commitish': 'main', 'name': '英德红茶作品下载 ' + TAG, 'body': '新版 H5 为11月4日排版修订版，包含透明绿红 Logo、最新换图和品质、制茶、品饮交互。视频和 PR 均使用60秒字幕配音同步版。PR 包保留空素材文件夹，并附确认配音 WAV、同步字幕、旁白稿和说明；原始视频、音乐、音效仍由 U 盘提供。新闻稿 Word 沿用已发布文档。\n\n网站：https://ydhc.denyinghanabi.cc.cd/', 'draft': True})
     existing = {a['name']: a for a in release['assets']}
     for name in ['yingde-video.mp4', 'yingde-complete.zip']:
         file = ROOT / 'output/release' / name
         if name in existing:
-            if existing[name]['size'] != file.stat().st_size:
+            if existing[name]['size'] != file.stat().st_size or existing[name].get('digest') != 'sha256:' + hashlib.sha256(file.read_bytes()).hexdigest():
                 raise RuntimeError('An existing release asset differs: ' + name)
             print('Already uploaded: ' + name, flush=True)
             continue
         print('Uploading: ' + name, flush=True)
         asset = api(config, 'POST', release['upload_url'].split('{')[0] + '?name=' + name, upload=file)
-        if asset['size'] != file.stat().st_size:
+        if asset['size'] != file.stat().st_size or asset.get('digest') != 'sha256:' + hashlib.sha256(file.read_bytes()).hexdigest():
             raise RuntimeError('Upload size mismatch: ' + name)
         print(json.dumps({'uploaded': asset['name'], 'bytes': asset['size']}), flush=True)
     if release['draft']:

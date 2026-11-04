@@ -1,4 +1,4 @@
-const RELEASE = 'https://github.com/Denyinghanabi/yingde-tea-downloads/releases/download/v1.0.1/';
+const RELEASE = 'https://github.com/Denyinghanabi/yingde-tea-downloads/releases/download/v1.0.2/';
 const LARGE_FILES = {
   '/downloads/yingde-video.mp4': ['yingde-video.mp4', 'video/mp4', '英德红茶视频.mp4'],
   '/downloads/yingde-complete.zip': ['yingde-complete.zip', 'application/zip', '英德红茶_作品合集.zip'],
